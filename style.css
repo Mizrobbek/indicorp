@@ -267,9 +267,6 @@ Main section styles
   margin-top: 214px;
 }
 
-.about-us-carts {
-}
-
 .about-us-title {
   font-family: "Montserrat";
   font-style: normal;
@@ -795,14 +792,25 @@ Main section styles
 Footer section styles
 =====================*/
 .footer-section {
-  width: 1440px;
-  height: 307px;
+  /* width: 1440px;
+  height: 307px; */
   background: #16697a;
 }
 
+.footer-lists {
+  display: flex;
+  gap: 40px;
+}
+
 .footer-list {
-  margin-left: 167px;
+  position: relative;
+  margin: 0;
   padding-top: 50px;
+  padding-bottom: 87px;
+}
+
+.select-list {
+  margin-left: 167px;
 }
 
 .footer-list-item {
@@ -831,4 +839,47 @@ Footer section styles
   color: #ffffff;
   text-decoration: none;
   margin-bottom: 20px;
+}
+
+.phone-images {
+  position: relative;
+  top: 5px;
+}
+
+.location-images {
+  position: relative;
+  top: 10px;
+}
+
+.telegram-images {
+  position: relative;
+  top: 10px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.made-by {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  margin-left: 197px;
+  padding: 25px 0 19px 0;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 197px;
+}
+
+.social-list_item {
+  list-style-type: none;
 }
