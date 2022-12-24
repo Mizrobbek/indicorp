@@ -9,6 +9,10 @@ body {
   max-width: 1440px;
 }
 
+.dark .header-section {
+  background-color: rgb(44, 42, 42);
+}
+
 /* ==================
 Header section styles
 =====================*/
@@ -68,8 +72,26 @@ Header section styles
   text-decoration: none;
 }
 
+.dark .nav-link {
+  color: #fff;
+}
+
 .nav-link:hover {
   color: #2c2a2a;
+}
+
+.theme {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  background-image: url(./IMG/moon.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+#theme:checked + .theme {
+  background-image: url(./IMG/sun.png);
 }
 
 .pages {
@@ -780,6 +802,7 @@ Main section styles
   padding: 15px 40px;
   margin-left: 450px;
   margin-bottom: 98px;
+  cursor: pointer;
 }
 /* ==================
 /Main section styles
